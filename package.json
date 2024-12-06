@@ -2,7 +2,8 @@
   "name": "bun-hono-perf-app",
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "start": "bun run src/index.ts"
+    "build": "bun build --compile --minify ./src/index.ts --outfile myapp",
+    "start": "./myapp"
   },
   "dependencies": {
     "hono": "^4.6.12"
