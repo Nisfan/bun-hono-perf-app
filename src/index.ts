@@ -9,4 +9,7 @@ app.get("/", async (c) => {
   return c.text("Hello Hono!");
 });
 
-export default app;
+export default {
+  port: 4000,
+  fetch: app.fetch,
+};
